@@ -9,6 +9,11 @@ Key features:
 - Customizable: Hadle experiments with different levels of complexity.
 - Modular: Create nodes to organize shared configurations and reduce duplication.
 
+# Installation
+```
+pip install hpdag
+```
+
 # Usage:
 
 ```python
