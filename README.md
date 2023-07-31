@@ -1,4 +1,13 @@
 # hpdag
+hpdag is a lightweight library designed to simplify experiment configurations in your research.
+Inspired by Airflow, define your experimental workflow via Directed Acyclic Graphs (DAGs) to easily manage complex combinations and options.
+
+
+Key features:
+- Minimal: 150 lines of code.
+- Airflow-inspired syntax: use the ">>" operator to connect nodes in your day to easily create complex experiments.
+- Customizable: Hadle experiments with different levels of complexity.
+- Modular: Create nodes to organize shared configurations and reduce duplication.
 
 # Usage:
 
