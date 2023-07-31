@@ -31,7 +31,8 @@ with DAG() as dag:
             )
     sizes = Node("size")("7b","3b") #run the experiment with two different sizes
     datasets >> ablations >>sizes
-print(dag)
+for task in dag.tasks:
+    print(task)
 ```
 
 Output:
