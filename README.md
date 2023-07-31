@@ -33,6 +33,7 @@ with DAG() as dag:
     datasets >> ablations >>sizes
 for task in dag.tasks:
     print(task)
+print(task.params) #Access dictionary representing the task
 ```
 
 Output:
@@ -53,4 +54,5 @@ Task(dataset=c4, lr=0.01, positional_enc=alibi, size=7b)
 Task(dataset=c4, lr=0.01, positional_enc=alibi, size=3b)
 Task(dataset=c4, lr=0.01, positional_enc=rotary, size=7b)
 Task(dataset=c4, lr=0.01, positional_enc=rotary, size=3b)
+{'dataset': 'c4', 'lr': 0.01, 'positional_enc': 'rotary', 'size': '3b'}
 ```
